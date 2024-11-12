@@ -10,6 +10,11 @@ class MyHome extends StatelessWidget {
         title: Text("Home"),
         backgroundColor: Colors.amber,
       ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [Center(child: Text("Hello Flutter Dev"))],
+      ),
     );
   }
 }
