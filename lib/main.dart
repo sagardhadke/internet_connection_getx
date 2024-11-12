@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_getx/connectivity_controller.dart';
 import 'package:internet_connection_getx/home_page.dart';
+import 'no_internet.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

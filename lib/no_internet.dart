@@ -1,4 +1,6 @@
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:internet_connection_getx/connectivity_controller.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +37,9 @@ class NoInternet extends StatelessWidget {
             ),
             ElevatedButton(
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
-                onPressed: () {},
+                onPressed: () {
+                  Get.find<ConnectivityController>().retryConnectiom();
+                },
                 child: Text(
                   "Try again",
                   style: TextStyle(color: Colors.white),
